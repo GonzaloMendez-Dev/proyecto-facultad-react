@@ -1,0 +1,239 @@
+.hotel {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 0.5rem;
+    width: 400px;
+    height: 420px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25);
+    transition-duration: 0.25s;
+    text-align: center;
+}
+
+.hotel:hover {
+    scale: 1.1;
+}
+
+.hotel a {
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+.hotel img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.hotel-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    /*height: 100px;*/
+    padding: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+.hotel-info span {
+    display: flex;
+    font-size: 15px;
+}
+
+.hotel-info table {
+    width: 100%;
+}
+
+.hotel-info td:nth-child(1) {
+    height: 30px;
+    font-size: 20px;
+}
+
+.hotel-info td:nth-child(2) {
+    text-align: end;
+}
+
+.hotel-info span {
+    padding: 5px;
+    border-radius: 1rem;
+}
+
+.hotel-info .not-available {
+    background-color: rgb(223, 93, 70);
+}
+
+.hotel-info .available {
+    background-color: rgb(15, 170, 95);
+}
+
+.hotel-info p {
+    font-size: 15px;
+}
+
+.hotel-info p {
+    font-size: 15px;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.image-container button {
+    visibility: hidden;
+    background-color: rgba(177, 177, 177, 0.5);
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    margin: 0.5rem;
+    z-index: 100;
+    align-self: flex-start;
+    font-size: 16px;
+    border-radius: 1rem;
+    border: 0px;
+    color: rgba(0, 0, 0, 0);
+}
+
+.image-container button.right {
+    align-self: flex-end;
+}
+
+.image-container:hover button {
+    visibility: visible;
+    color: white;
+}
+
+.container-images {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.slider-container {
+    position: relative;
+    width: 100%;
+}
+
+ul,
+li {
+    list-style: none;
+    white-space: nowrap;
+}
+
+li {
+    display: inline;
+}
+
+ul {
+    padding-left: 0%;
+}
+
+.leftArrow {
+    width: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -70%);
+    left: 10px;
+    font-size: 30px;
+    font-weight: 800;
+    color: #fff;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.rightArrow {
+    width: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -70%);
+    right: 12px;
+    font-size: 30px;
+    font-weight: 800;
+    color: #fff;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.button-carrusel {
+    color: white;
+    width: 30px;
+    height: 50px;
+    font-weight: 700;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 0px;
+    background-color: transparent;
+}
+
+.dots-container {
+    display: flex;
+    justify-content: center;
+}
+
+.dot-container-item {
+    margin: 5px 3px;
+    cursor: pointer;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.active {
+    background-color: #ccc;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+.hotel img {
+    height: 200px;
+}
+
+.hotel .info-descripcion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 500;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    align-self: center;
+}
+
+.hotel .info-titulo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.hotel .tipo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+
+    border-radius: 1rem;
+    padding: 0.25rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+
+    font-weight: bold;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+}
+
+.hotel .servicio {
+    border-radius: 1rem;
+    padding: 0.25rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+
+    color: white;
+    background-color: rgb(72, 124, 57);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+}
